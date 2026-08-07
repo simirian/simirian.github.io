@@ -1,0 +1,9 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+.bundle
+
+# github says to do this, even though you'd normally check-in lockfiles
+Gemfile.lock

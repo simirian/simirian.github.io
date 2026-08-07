@@ -1,0 +1,12 @@
+# site settings
+title: simi's website
+email: simirian5813@gmail.com
+description: >-
+  Various things that I've made.
+baseurl: ""
+url: ""
+github_username: simirian
+
+# build settings
+theme: minima
+plugins: []
