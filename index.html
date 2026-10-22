@@ -1,0 +1,59 @@
+---
+layout: default
+title: simirian's site
+---
+<main class="index-main">
+  <section class="focus">
+    <h1>&thinsp;simirian.</h1>
+    <p>Code, Biology, Chemistry, Writing, and Art.</p>
+  </section>
+  <section class="cards">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/ProteinogenicAminoAcids.svg" />
+      <h1>Header</h1>
+      <p>
+        <i>
+          <a href="https://commons.wikimedia.org/wiki/File:ProteinogenicAminoAcids.svg">TungstenEinsteinium</a>,
+          <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>,
+          via Wikimedia Commons
+        </i>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <div class="gradient"></div>
+    </div>
+    <div class="card">
+      <h1>Second Card</h1>
+      <p>
+        These cards are currently a pain to create. I need to look into how to
+        create template elements with Jekyll, if it's possible. It really ought
+        to be possible to just create a function-like thing where I can do
+      </p>
+      {% raw %}
+      <pre>{{card title = "Amino acids", ...}}</pre>
+      {% endraw %}
+      <p>
+        It would also be nice to do this with code blocks, now that I just made
+        that one. Then I could easily set the language and have it make note, as
+        well as add a copy button and other things. I think the way might just
+        be to fix things with JS on window load.
+      </p>
+      <div class="gradient"></div>
+    </div>
+    <div class="card">
+      <h1>Third Card</h1>
+      <p>
+        Not sure what else to put here. Once this site is more set up, these
+        cards will have exemplary pages from each of the main categories in the
+        top nav bar.
+      </p>
+      <div class="gradient"></div>
+    </div>
+  </section>
+</main>

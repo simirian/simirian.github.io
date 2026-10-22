@@ -1,0 +1,72 @@
+---
+---
+
+$background-color: #181818;
+$border-color: #222;
+$card-color: #333;
+$foreground-color: #eee;
+$code-color: #aaa;
+$link-color: #a9c;
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import "index";
+@import "cards";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  color: $foreground-color;
+}
+
+header {
+  padding: 1rem 1rem 1rem 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  height: min-content;
+
+  border-bottom: 2px solid $border-color;
+
+  * {
+    margin-block: auto;
+    font-size: 2rem;
+  }
+  h1 {
+    font-family: Lexend, sans-serif;
+  }
+  nav {
+    display: flex;
+  }
+  p {
+    padding-inline: 1rem;
+  }
+  a {
+    color: $foreground-color;
+    font: 1.5rem Martel Sans, sans-serif;
+    margin-block: auto;
+    text-decoration: none;
+  }
+}
+
+a {
+  color: $link-color;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  color: $code-color;
+  padding: 1rem;
+  overflow: scroll;
+}
+
+footer {
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 2px solid $border-color;
+}

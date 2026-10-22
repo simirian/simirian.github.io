@@ -1,0 +1,27 @@
+.card {
+  border-radius: 3px;
+  background-color: $card-color;
+  padding: 2rem;
+  overflow: clip;
+  position: relative;
+
+  width: var(--card-width, 20rem);
+  height: var(--card-height, 30rem);
+
+  img {
+    width: 100%;
+  }
+  h1 {
+    font: 1.5rem Lexend, sans-serif;
+  }
+  p {
+    font: 1rem Martel Sans, sans-serif;
+  }
+  .gradient {
+    position: absolute;
+    inset: 0 0 0 0;
+    background: linear-gradient(0, rgba(48, 48, 48, 1), rgba(48, 48, 48, 0) 30%);
+    // // background-color: linear-gradient($card-color, rgba(0, 0, 0, 0));
+    // background: linear-gradient(0deg, rgba(48, 48, 48, 1) 0%, rgba(51, 51, 51, 1) 2rem, rgba(232, 220, 85, 1) 100%, rgba(237, 83, 83, 0.00) 100%);
+  }
+}
