@@ -55,6 +55,18 @@ header {
   }
 }
 
+footer {
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 2px solid $border-color;
+}
+
+main {
+  margin: auto;
+  width: min(90%, 50rem);
+  flex-grow: 1;
+}
+
 a {
   color: $link-color;
 }
@@ -67,8 +79,6 @@ pre {
   overflow: scroll;
 }
 
-footer {
-  padding: 1rem;
-  margin-top: 2rem;
-  border-top: 2px solid $border-color;
+.hide {
+  display: none;
 }
