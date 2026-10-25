@@ -1,0 +1,12 @@
+<div class="card">
+  {% if include.content %}
+    {% include_relative {{ include.content }} %}
+  {% else %}
+    {% if include.img %}
+    <img src="{{ include.img }}" />
+    {% endif %}
+    <h1>{{ include.title }}</h1>
+    <p>{{ include.caption }}</p>
+  {% endif %}
+  <div class="gradient"></div>
+</div>

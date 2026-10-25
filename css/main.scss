@@ -21,6 +21,9 @@ $link-color: #a9c;
 body {
   background-color: $background-color;
   color: $foreground-color;
+  min-height: 100svh;
+  display: flex;
+  flex-flow: column;
 }
 
 header {
