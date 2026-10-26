@@ -18,8 +18,8 @@ function buildTimeline(timeline, width, height) {
   // grab the first & last date in eras/events
   const xmin = Math.min(...json.events.map(e => e.date), ...json.eras.map(e => e.start));
   const xmax = Math.max(...json.events.map(e => e.date), ...json.eras.map(e => e.end));
-  width = width || 500;
-  height = height || 200;
+  width = width || json.width || 500;
+  height = height || json.height || 200;
 
   // make smaller eras appear later so they are clickable over larger eras
   json.eras.sort((a, b) => (b.end - b.start) - (a.end - a.start));
@@ -77,7 +77,6 @@ function buildTimeline(timeline, width, height) {
   for (let i = 0; i < json.plot.data.length; ++i)
     data.push({ "date": plotStart + interval * i, value: json.plot.data[i] });
   svg.append("path").attr("d", area(data)).attr("fill", "#ffffff20");
-  console.log(interval, data);
 
   const node = svg.node();
   timeline.parentElement.replaceChild(node, timeline);

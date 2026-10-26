@@ -1,0 +1,17 @@
+{
+  "themes": [ "James", "Niobe", "Godhood", "Belief" ],
+  "events": [
+    { "date": 0, "title": "Abduction", "theme": "Godhood", "link": "god-project/abduction" },
+    { "date": 0.12, "title": "Divinity conversation", "theme": "Godhood", "link": "god-project/theology" },
+    { "date": 0.75, "title": "Return to earth", "link": "god-project/nostalgia" },
+    { "date": 1.03, "title": "Niobe goes public", "theme": "Niobe", "link": "god-project/inspiration" },
+    { "date": 1.04, "title": "Evening talk show", "theme": "Belief", "link": "god-project/5-05-pm" },
+    { "date": 1.73, "title": "James dies", "theme": "James", "link": "god-project/deicide" }
+  ],
+  "eras": [
+    { "name": "Abduction", "start": 0, "end": 0.08, "link": "god-project/abduction" },
+    { "name": "Missing", "start": 0.001, "end": 0.75, "link": "god-project/missing" },
+    { "name": "5:05 PM", "start": 1.04, "end": 1.05, "link": "god-project/5-05-pm" }
+  ],
+  "plot": { "start": 0.98, "theme": "James", "data": [2, 6, 57, 4397, 43985, 324875, 893286, 2390230, 3892342, 4134798] }
+}
