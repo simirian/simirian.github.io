@@ -3,25 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" type="image/svg" href="/ico.svg">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&family=Martel+Sans:wght@200;300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Lexend:wght@700&family=Martel+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Lexend:wght@700&family=Martel+Sans&family=Rubik&family=Spectral&display=swap" rel="stylesheet">
+
+    <!-- scripts -->
+    {% if page.use-timeline %}
+    <script src="/scripts/timeline.js" type="module"></script>
+    {% endif %}
   </head>
   <body>
     <header>
-      <h1> simirian</h1>
+      <h1>simirian</h1>
       <nav>
-        <p><a href="/projects">Projects</a></p>
-        <p><a href="/stories">Stories</a></p>
-        <p><a href="/worlds">Worlds</a></p>
+        <a href="/projects">Projects</a>
+        <a href="/stories">Stories</a>
+        <a href="/worlds">Worlds</a>
       </nav>
     </header>
-    {{content}}
+    <main>
+      {{content}}
+    </main>
     <footer>
       &copy; 2026
       <a href="https://github.com/simirian">simirian</a>

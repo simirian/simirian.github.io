@@ -3,23 +3,21 @@ layout: default
 title: simirian's site
 ---
 <link rel="stylesheet" href="/css/index.css" />
-<main class="index-main">
-  <section class="focus">
-    <h1>&thinsp;simirian.</h1>
-    <p>Code, Biology, Chemistry, Writing, and Art.</p>
-  </section>
-  <section class="cards">
-    {% include card.html
-      title = "Header"
-      content = "writing/god-project/_card.html"
-    %}
-    {% include card.html
-      title = "Second Card"
-      caption = "I figured out how to do templates to make these cards work better. They're still a little awkward, but they're pretty good as-is."
-    %}
-    {% include card.html
-      title = "Third Card"
-      caption = "Not sure what else to put here. Once this site is more set up, these cards will have exemplary pages from each of the main categories in the top nav bar."
-    %}
-  </section>
-</main>
+<section class="focus">
+  <h1>&thinsp;simirian.</h1>
+  <p>Code, Biology, Chemistry, Writing, and Art.</p>
+</section>
+<section class="cards">
+  {% include card.html
+    title = "Header"
+    content = "writing/god-project/_card.html"
+  %}
+  {% include card.html
+    title = "Second Card"
+    caption = "I figured out how to do templates to make these cards work better. They're still a little awkward, but they're pretty good as-is."
+  %}
+  {% include card.html
+    title = "Third Card"
+    caption = "Not sure what else to put here. Once this site is more set up, these cards will have exemplary pages from each of the main categories in the top nav bar."
+  %}
+</section>

@@ -8,7 +8,6 @@ $foreground-color: #eee;
 $code-color: #aaa;
 $link-color: #a9c;
 
-@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 @import "cards";
 
 * {
@@ -39,18 +38,16 @@ header {
     font-size: 2rem;
   }
   h1 {
-    font-family: Lexend, sans-serif;
+    font: 2.5rem Lexend, sans-serif;
   }
   nav {
     display: flex;
   }
-  p {
-    padding-inline: 1rem;
-  }
   a {
+    display: block;
+    padding-inline: 1rem;
     color: $foreground-color;
     font: 1.5rem Martel Sans, sans-serif;
-    margin-block: auto;
     text-decoration: none;
   }
 }
@@ -77,6 +74,14 @@ pre {
   color: $code-color;
   padding: 1rem;
   overflow: scroll;
+}
+
+p {
+  font-family: Martel Sans, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Spectral, serif;
 }
 
 .hide {
